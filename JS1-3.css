@@ -32,3 +32,19 @@
 .news {
     border-bottom: 2px solid black;
 }
+
+@media (max-width: 768px) {
+    .menus {
+        display: none; 
+    }
+    .menus.open {
+        display: flex; 
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        width: 100%;
+        top: 80px; 
+        left: 0;
+        z-index: 1000;
+    }
+}
