@@ -161,6 +161,15 @@ const closeNav = () => {
   document.getElementById('mySidenav').style.width = '0';
 };
 
+// 다크 모드 토글 기능
+const toggleDarkMode = () => {
+  document.body.classList.toggle('dark-mode');
+};
+
+// 다크 모드 토글 버튼 클릭 이벤트
+document.querySelector('.checkbox').addEventListener('change', toggleDarkMode);
+
+
 // 초기 뉴스 로드
 getLatestNews();
 
